@@ -6,5 +6,10 @@
   <p>Username: {{ user }}</p>
   <p>First Name: {{ user.first_name }}</p>
   <p>Last Name: {{ user.last_name }}</p>
+  <p>Description: {{ user.userprofile.description }}</p>
+  <p>Website: {{ user.userprofile.website }}</p>
+  <p>Phone: {{ user.userprofile.phone }}</p>
+  <p>City: {{ user.userprofile.city }}</p>
+  <img src="{{ user.userprofile.image.url }}" width="200 ">
 </div>
 {% endblock %}

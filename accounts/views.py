@@ -10,9 +10,9 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 
 # Create your views here.
-def home(request):
-    data = {'name': ' ', 'age': [1,2,3,4,5]}
-    return render(request, 'accounts/home.html', data)
+# def home(request):
+#     data = {'name': ' ', 'age': [1,2,3,4,5]}
+#     return render(request, 'accounts/home.html', data)
 
 def register(request):
     if request.method == 'POST':
